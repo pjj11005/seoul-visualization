@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>서울시 미세먼지 시각화</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<main>
+
+  <div id="dis" style="position: relative; left: 0; top: 0;">
+    <h3 id="label_dis">서울시와 다른 지역 질병현황 비교 </h3>
+    <div>
+    <strong>비교 지역 선택 :</strong>
+    <select id="disease"></select> 
+    </div>
+  </div>
+    
+<div id="sel_pol" style="position: relative; right: 0; top: 0;">
+    <h3>(단위 면적당) 오염물질 배출량 비교 </h3>
+    <div>
+      <strong>오염물질 :</strong>
+      <select id="pol"></select>
+    </div>
+  </div>
+
+  
+  <div id="dust"  style="position: relative; left: 0; bottom: 0;">
+    <h3>서울시 연도별 미세먼지</h3>
+    <div>
+      <strong>미세먼지 : </strong>
+      <select id="selectButton2"></select>
+    </div>
+  </div>
+  
+ <div id="region"  style="position: relative; right: 0; bottom: 0;">
+    <h3>연도별 미세먼지 심각지역 TOP5</h3>
+    <div>
+      <strong>연도 :</strong>
+      <select id="selectButton"></select>
+    </div>
+  </div>
+</main>
+  
+
+<!-- partial -->
+  <script src='https://unpkg.com/d3@7'></script>
+  <script  src="./script.js"></script>
+</body>
+</html>
